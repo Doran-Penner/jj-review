@@ -5,3 +5,5 @@ As I do this more, I'm learning the pain points! For example, merging and pullin
 - check that you can put slashes in your MR name
 - forget old version of MR so we don't force-push to the old MR (that would be bad!)
   - this maybe could be solved by server-side push rules
+
+Next plan is to make the create and update scripts auto-push the new bookmark, because it really should be like that.
