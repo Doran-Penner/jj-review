@@ -18,3 +18,7 @@ new_ver="$(echo $x | rev | cut -d "v" -f 1 | rev)"
 echo "Creating new version of merge request $1"
 
 jj bookmark create -r @ prop/merge/"$1"/v"$(( new_ver + 1 ))"
+
+echo "Pushing new version"
+
+jj git push -b prop/merge/"$1"/v"$(( new_ver + 1 ))"
