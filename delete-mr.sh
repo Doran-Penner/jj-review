@@ -5,4 +5,9 @@ if [ $# -eq 0 ]; then
   exit 1
 fi
 
+if [ $# -ge 2 ]; then
+  echo "Too many arguments provided! (usage \`./create-mr.sh myfeature\`)"
+  exit 1
+fi
+
 jj bookmark delete "glob:prop/merge/$1/*"
