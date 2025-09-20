@@ -1,4 +1,4 @@
-This is a very quick, dirty, and hacky way to do code review. (Currently more of a proof-of-concept than anything else.) No pushing directly to main --- instead, create a "proposed commit" with `./create-mr.sh` that out for review. (For example, your feature branch will have some changes on it, then the tip will be a merge of main and feat.) That top commit will just have conflict resolution and a descriptiion of the overall change you want to add. Feedback is WIP.
+This is a very quick, dirty, and hacky way to do code review. (Currently more of a proof-of-concept than anything else.) No pushing directly to main --- instead, create a "proposed commit" with `./create-mr.sh` that out for review. (For example, your feature branch will have some changes on it, then the tip will be a merge of main and feat.) That top commit will just have conflict resolution and a descriptiion of the overall change you want to add. Feedback on changes is WIP.
 
 As I do this more, I'm learning the pain points! For example, merging and pulling is annoying. Things I want:
 - standard review bookmark name, e.g. `review/merge/xyz/v1`
