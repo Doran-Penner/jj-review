@@ -5,6 +5,11 @@ if [ $# -eq 0 ]; then
   exit 1
 fi
 
+if [ $# -ge 2 ]; then
+  echo "Too many arguments provided! (usage \`./create-mr.sh myfeature\`)"
+  exit 1
+fi
+
 # do we want --revisions @ ? I feel like we don't
 x="$(jj bookmark list --sort name- | rg "prop/merge/$1/v[^:]+" --only-matching --max-count 1)"
 
