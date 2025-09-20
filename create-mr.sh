@@ -8,3 +8,7 @@ fi
 echo "Creating first version of merge request $1"
 
 jj bookmark create -r @ prop/merge/"$1"/v1
+
+echo "Pushing the bookmark"
+
+jj git push -Nb prop/merge/"$1"/v1
