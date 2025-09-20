@@ -12,4 +12,4 @@ fi
 
 echo "Creating & pushing first version of merge request $1"
 
-jj git push --named prop/merge/"$1"/v1=@
+jj git push --named c/r/"$1"/v1=@

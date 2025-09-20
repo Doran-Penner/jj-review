@@ -10,5 +10,5 @@ if [ $# -ge 2 ]; then
   exit 1
 fi
 
-jj bookmark delete "glob:prop/merge/$1/*"
-jj git push -b "glob:prop/merge/$1/*"
+jj bookmark delete "glob:c/r/$1/*"
+jj git push -b "glob:c/r/$1/*"
